@@ -7,13 +7,20 @@ on:
     branches:
       - master
 
+  workflow_dispatch:
+
 jobs:
   tag:
       runs-on: ubuntu-latest
       steps:
-      - uses: actions/checkout@master
-      - uses: jaliborc/action-general-autotag@master
-        with:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          source_file: "Bagnon.toc"
-          extraction_regex: "\\s*##\\s*Version\\s*:\\s*([\\d\\.]+)"
+      - uses: actions/checkout@v2
+      - run: |
+          version=$(sed -n -re 's/\s*##\s*Version\s*:\s*(\S+)/\1/p' Bagnon.toc)
+
+          if git rev-parse "$version" &>/dev/null; then
+            echo 'tag already exists'
+            exit 0
+          fi
+
+          git tag "$version"
+          git push --tags
