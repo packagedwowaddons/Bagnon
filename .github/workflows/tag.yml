@@ -3,17 +3,34 @@ name: tag
 on:
   push:
     paths:
-      - Bagnon.toc
+      - '**.toc'
     branches:
       - master
+      - main
+
+  workflow_dispatch:
 
 jobs:
   tag:
       runs-on: ubuntu-latest
       steps:
-      - uses: actions/checkout@master
-      - uses: jaliborc/action-general-autotag@master
+      - uses: actions/checkout@v3
         with:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          source_file: "Bagnon.toc"
-          extraction_regex: "\\s*##\\s*Version\\s*:\\s*([\\d\\.]+)"
+          fetch-depth: 0
+
+      - run: |
+          maintoc=$(find . -name '*.toc' -maxdepth 1 | head -n1)
+          version=$(sed -n -re 's/\s*##\s*Version\s*:\s*(\S+)/\1/p' "$maintoc")
+
+          echo "found toc $maintoc"
+          echo "found version $version"
+
+          echo "git lookup:"
+
+          if git rev-parse "$version"; then
+            echo 'tag already exists'
+            exit 0
+          fi
+
+          git tag "$version"
+          git push --tags
