@@ -1,0 +1,10 @@
+enable-nolib-creation: no
+
+manual-changelog:
+    filename: Changelog.md
+    markup-type: markdown
+
+move-folders:
+    addons/config: Bagnon_Config
+    addons/guild: Bagnon_Guild
+    addons/vault: Bagnon_Vault
