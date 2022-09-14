@@ -1,0 +1,8 @@
+## Interface: 90207
+## Title: Bagnon Vault
+## Author: Tuller and Jaliborc (João Cardoso)
+## Notes: A vault menu for Bagnon
+## Dependencies: Bagnon
+## LoadOnDemand: 1
+
+..\Bagnon\addons\vault\vault.xml
