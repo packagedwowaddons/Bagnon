@@ -1,0 +1,8 @@
+## Interface: 11403
+## Title: |cff20ff20Bagnon (Vault)|r
+## Author: Tuller & Jaliborc (João Cardoso)
+## Notes: Single window displays for your inventory and bank
+## Dependencies: Bagnon
+## Version: 9.2.2
+
+vault.xml
