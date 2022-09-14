@@ -1,0 +1,6 @@
+package-as: Bagnon
+
+move-folders:
+    Bagnon/addons/config: Bagnon_Config
+    Bagnon/addons/guild: Bagnon_Guild
+    Bagnon/addons/vault: Bagnon_Vault

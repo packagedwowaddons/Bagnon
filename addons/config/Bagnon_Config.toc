@@ -1,0 +1,8 @@
+## Interface: 11403
+## Title: |cff20ff20Bagnon (Config)|r
+## Author: Tuller & Jaliborc (João Cardoso)
+## Dependencies: Bagnon
+## OptionalDeps: BagBrother, WoWUnit, TestPoncho
+## Version: 9.2.2
+
+config.xml
