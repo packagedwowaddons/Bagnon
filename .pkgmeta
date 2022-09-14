@@ -1,0 +1,4 @@
+package-as: Bagnon
+
+move-folders:
+    Bagnon/dumb_ass_hack: ''
