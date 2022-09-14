@@ -1,0 +1,6 @@
+package-as: Bagnon
+
+move-folders:
+    Bagnon/Bagnon_Config.toc: Bagnon_Config/Bagnon_Config.toc
+    Bagnon/Bagnon_Guild.toc: Bagnon_Guild/Bagnon_Guild.toc
+    Bagnon/Bagnon_Vault.toc: Bagnon_Vault/Bagnon_Vault.toc
