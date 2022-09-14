@@ -1,0 +1,6 @@
+package-as: Bagnon
+
+move-folders:
+    Bagnon/dumb_ass_hack/Bagnon_Config/Bagnon_Config.toc: Bagnon_Config/Bagnon_Config.toc
+    Bagnon/dumb_ass_hack/Bagnon_Guild/Bagnon_Guild.toc: Bagnon_Guild/Bagnon_Guild.toc
+    Bagnon/dumb_ass_hack/Bagnon_Vault/Bagnon_Vault.toc: Bagnon_Vault/Bagnon_Vault.toc
