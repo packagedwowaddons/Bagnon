@@ -1,3 +1,7 @@
+### 12.0.8
+* __Bug Fix:__ Added workarounds to issues created by Blizzard secret value spread on tooltips.
+* __Improvement:__ Characters on account gold tooltip now appear sorted by highest gold amount _(by dfherr)_.
+
 ### 12.0.7
 * __Hotfix:__ Currency tracking now works as intended on both retail and classic servers.
 
