@@ -1,3 +1,6 @@
+### 12.0.10
+* Added mechanism to prevent tooltip issue that could appear in unkown circumstances. Apologies for the inconvenience.
+
 ### 12.0.9
 * Hotfix typo in previous build.
 
